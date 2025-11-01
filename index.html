@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loria Web Chat</title>
+<style>
+body { background:#0f0f0f; margin:0; font-family:Arial, sans-serif; color:white; }
+#chat { max-width:600px; margin:40px auto; background:#1c1c1c; padding:15px; border-radius:12px; }
+#messages { height:350px; overflow-y:auto; border-bottom:1px solid #333; padding-bottom:10px; }
+.msg { margin:8px 0; }
+#inputBox { display:flex; gap:8px; margin-top:10px; }
+#inputBox input { flex:1; padding:10px; border:none; border-radius:8px; }
+button { padding:10px 14px; border:none; border-radius:8px; cursor:pointer; }
+</style>
+</head>
+<body>
+<div id="chat">
+  <div id="messages"></div>
+  <div id="inputBox">
+    <input id="msgInput" placeholder="Talk to Loria..."/>
+    <button onclick="sendMsg()">Send</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
